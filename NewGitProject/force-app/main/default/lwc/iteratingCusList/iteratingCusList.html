@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title ='Indian team players'>
+        <ul class ='slds-m-aound_medium'>
+            <template iterator:it={Contacts} >
+            <li key ={it.value.id}>
+              <div if:true={it.first} class ='list-first'></div>
+              {it.value.Id},{it.value.Name},{it.value.Sports}
+              <div if:true={it.last} class ='list-last'></div>
+            </li>
+        </template>
+        </ul>
+            
+    </lightning-card>
+</template>

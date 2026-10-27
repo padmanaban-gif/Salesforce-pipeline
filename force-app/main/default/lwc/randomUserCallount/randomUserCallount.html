@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title ='Rnadom user' icon-name="standard:account">
+        <template if:true={userData}>
+           <template for:each={userData} for:item="user">
+            <li key={user.Id}>{user.name.first}-{user.name.last}-{user.email}</li>
+           
+           </template>
+        </template>
+        <template if:true={error}>
+            <p>Error:{error}</p>
+        </template>
+    </lightning-card>
+    
+</template>

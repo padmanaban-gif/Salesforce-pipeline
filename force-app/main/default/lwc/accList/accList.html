@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title ='Related records with Account' icon-name='custom:custom14'>
+        <template if:true={records.data}>
+            <lightning-formatted-text value ={name} class="slds-text-heading_large"></lightning-formatted-text>
+        </template>
+        <ul class ='slds-m-aroung_medium'>
+            <template for:each={Contacts} for:item="record">
+                <li key ={record.Id}>
+                    {record.FirstName} -{record.LastName}
+                </li>
+            </template>
+            </ul>
+            <template if:true={error}></template>
+    </lightning-card>
+    
+</template>

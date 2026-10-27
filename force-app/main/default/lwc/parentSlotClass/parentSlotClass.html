@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title='All Students'>
+        <ul>
+            <template for:each={showStudents} for:item='students'>
+                <li key={students.Name} style='padding:10px'>
+                    <c-child-slot-class show-students>
+                        <lightning-tile label={students.Name} slot='studentInfo'>
+                            <p class="slds-truncate" title={students.mark}>Obtained marks:{students.mark}
+                            </p>
+                        </lightning-tile>
+                        <div>This student is passed</div>
+                    </c-child-slot-class>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

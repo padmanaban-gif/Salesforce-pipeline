@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Inline edit records" icon-name="standard:account">
+        <lightning-datatable 
+        key-field=" Id"
+        data ={data}
+        columns={columns}
+        onsave={handleSave}
+        draft-values={draftedValues}>
+    </lightning-datatable>
+
+    </lightning-card>
+    
+</template>

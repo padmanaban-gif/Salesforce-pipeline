@@ -1,0 +1,36 @@
+<template>
+   <!--<lightning-card title ='Account Manger'>
+     <lightning-layout>
+        <lightning-layout-item size = '6' padding ='aound-small'>
+            <lightning-card title = 'Create New Record'>
+               <lightning-input name="Account Name" label ='Name' onchange={accountNameHnadler}></lightning-input>
+               <lightning-input name="Account Phone" type ='Phone' label ='Phone' onchange={accountPhoneHnadler}></lightning-input>
+               <lightning-input name="Account Website" type="url" label ='Website' onchange={accountWebsiteHnadler}></lightning-input>
+               <lightning-button label="Create Record" onclick={createAccount} variant ='brand'></lightning-button>
+            </lightning-card>
+        </lightning-layout-item>
+     </lightning-layout>
+
+    </lightning-card>-->
+    <lightning-card title ='Account Manger'>
+        <lightning-layout>
+           <lightning-layout-item size = '6' padding ='aound-small'>
+               <lightning-card title = 'Create New Record'>
+                  <lightning-input name="Account Name" label ='Name' onchange={accountNameHnadler}></lightning-input>
+                  <lightning-input name="Account Phone" type ='Phone' label ='Phone' onchange={accountPhoneHnadler}></lightning-input>
+                  <lightning-input name="Account Website" type="url" label ='Website' onchange={accountWebsiteHnadler}></lightning-input>
+                  <lightning-button label="Create Record" onclick={createAccount} variant ='brand'></lightning-button>
+               </lightning-card>
+           </lightning-layout-item>
+           <lightning-layout-item size = '6' padding ='aound-small'>
+            <lightning-card title = 'New Account Record'>
+               <p> <lightning-formatted-text value={accname}></lightning-formatted-text></p>
+               <p> <lightning-formatted-phone value ={accPhone}></lightning-formatted-phone></p>
+               <p> <lightning-formatted-url value={accWebiste}></lightning-formatted-url></p>
+            </lightning-card>
+           </lightning-layout-item>
+        </lightning-layout>
+        
+   
+       </lightning-card>
+</template>

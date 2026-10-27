@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title = 'current user'>
+        <template if:true={userData}>
+            <template for:each={userData} for:item="user">
+                <li key ={user.Id}>{user.Name}-{user.email}</li>
+            </template>
+        </template>
+    </lightning-card>
+    
+</template>

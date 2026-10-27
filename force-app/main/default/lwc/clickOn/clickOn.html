@@ -1,0 +1,19 @@
+<template>
+<!--    
+    <div class = 'slds-m-around_medium'>//single query selector
+        <lightning-card>
+            <p>hello, {Greeting}</p>
+    <lightning-input label ='Name' value={Greeting}></lightning-input>
+    <br>
+    <lightning-button label='click here' onclick={handleClick} variant ='brand'></lightning-button>
+
+</lightning-card></div> -->
+<lightning-card>
+    <p>Hello, {FirstName} {LastName}</p>
+    <lightning-input name ='fname' label = 'First Name' placeholder="enter your first name " value ={FirstName}></lightning-input>
+    <br>
+    <lightning-input name ='lname' label = 'Last Name' placeholder =" enter your last name" value={LastName} ></lightning-input>
+    <br>
+    <lightning-button label ='Click' onclick ={handleClick}></lightning-button>
+</lightning-card>
+</template>

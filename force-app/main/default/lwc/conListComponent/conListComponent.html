@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title = 'Contact data' icon-name="standard:contact">
+        <template for:each={accList} for:item="acc">
+            <li key={acc.Id}>{acc.FirstName}-{acc.Phone}</li>
+        </template>
+    </lightning-card>
+    
+</template>

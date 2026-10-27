@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title = 'Choose the option' icon-name="standard:task">
+        <lightning-combobox
+        options={options} value ={selectedValue} onchange ={handleChange} >
+ </lightning-combobox>
+ <template if:true={sectionA}>
+    <lightning-input label ='Option A' value={selectedValue}></lightning-input>
+ </template>
+ <template if:true={sectionB}>
+    <lightning-input label ='Option B' value={selectedValue}></lightning-input>
+ </template>
+    </lightning-card>
+    
+</template>

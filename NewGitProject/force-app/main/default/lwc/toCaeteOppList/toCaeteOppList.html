@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title = 'Opportnity list' icon-name ="custom:custom14">
+        <lightning-button label ="oppoortunity list" value ={oppeList} onclick ={hendleClick}>
+            <template for:each={oppeList} for:item="oppo" for:index ='index'>
+                <div key ={oppo.Id} >
+                    
+                        <p>{oppo.Name}</p>
+                   </div> </template>
+        </lightning-button>
+    </lightning-card>
+</template>

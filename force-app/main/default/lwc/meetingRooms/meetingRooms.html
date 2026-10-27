@@ -1,0 +1,34 @@
+<template>
+    <!--<lightning-card title='Available Luxury rooms'>
+        <lightning-layout>
+            <lightning-layout-item size='4' padding="arround-small">
+                <template for:each={meetingRoomInfo} for:item='room'>
+                    <li key={room.roomName} style='padding:10px'>
+                        <c-meeting-room meeting-room-info={room} show-room-info
+                            ontileclick={tileeClickHandler}></c-meeting-room>
+                    </li>
+                </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size='8' padding="arround-small">
+                you have selected : {selecetdRoom}
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>-->
+    <lightning-card title='Available Luxury rooms'>
+        <lightning-layout>
+            <lightning-layout-item size='4' padding="arround-small">
+                <template for:each={meetingRoomInfo} for:item='room'>
+                    <li key={room.roomName} style='padding:10px'>
+                        <c-meeting-room meeting-room-info={room} show-room-info
+                           ></c-meeting-room>
+                    </li>
+                </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size='8' padding="arround-small">
+                you have selected : {selecetdRoom}
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title = "Passenger details">
+        <div class ='slds-m-aound_medium'>
+            <lightning-input type="checkbox" label ='Show details' onchange ={handleChange}></lightning-input>
+            <template if:true={areDetailsIsVisible}>
+                <div class = 'slds-m-vertical_medium'>
+                    Name = Jaya prakash
+                    <br>
+                    age = 26
+                </div>
+            </template>
+            <template if:false={areDetailsIsVisible}>
+                <div class = 'slds-m-vertical_medium'>
+                    No passenger details
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>

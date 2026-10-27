@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title ='Sort Table details' icon-name="standard:account">
+        <lightning-datatable key-field="name" data={data} columns ={columns}
+        sorted-by={sortedBy} sorted-direction={sortedDirection} onsort ={handleSort}></lightning-datatable>
+    </lightning-card>
+    
+</template>

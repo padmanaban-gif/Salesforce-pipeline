@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title ='Account table' icon-name="standard:account">
+        <div class ='slds-m-aound_medium'>
+            <template if:true={tableData}>
+                <lightning-datatable key-field="Id" data={tableData} columns={coulmn}  hide-checkbox-column></lightning-datatable>
+
+            </template>
+        </div>
+
+    </lightning-card>
+    
+</template>

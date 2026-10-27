@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title ='select status' icon-name="standard:account">
+        <lightning-combobox name=" status" label="choose status" value={status}
+        options={statusOptions} onchange={handleChange}  placeholder="select status" 
+        ></lightning-combobox>
+    
+    <template if:true={isApprooved} >
+    <lightning-input label="Approoved by this" value ={status} ></lightning-input>
+    
+</template>
+</lightning-card>
+</template>

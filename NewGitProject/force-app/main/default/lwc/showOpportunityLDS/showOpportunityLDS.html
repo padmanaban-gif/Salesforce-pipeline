@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title ='Current data' icon-name="standard:oppotunity">
+        <!-- to show the every fileds using layout tpe as full-->
+        <!--<lightning-record-form record-id={recordId} object-api-name='Opportunity'
+        layout-type="Full" mode="view">
+   
+        </lightning-record-form> -->
+        <lightning-record-form record-id={recordId} obkject-api-name="Opportunity" columns ='2'
+        fields ={fieldsArray} mode='view' onsuccess={hadleSuccess} ></lightning-record-form>
+    </lightning-card>
+    
+</template>

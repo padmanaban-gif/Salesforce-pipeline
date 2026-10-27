@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title='Load 4 Contacts' icom-name="standard:contact">
+        <lightning-button label="Load" onclick ={handleLoding}></lightning-button>
+        <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+        <template for:each={accounts} for:item="account">
+            <li key ={account.Id}>{account.FirstName}</li>
+        </template>
+    </lightning-card>
+    
+</template>

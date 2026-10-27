@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title ='Indian players'>
+        <ol class ='slds-m-around_medium'> 
+            <template for:each={Contacts} for:item ='contact'>
+                <li key ={contact.Id}>
+                    {contact.Name}, {contact.Sports}
+                </li>
+            </template>
+        </ol>
+    </lightning-card>
+</template>

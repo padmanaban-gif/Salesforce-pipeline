@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title ='Update Contact' icon-name="standard:contact">
+        <div class ='slds-p-around_medium'>
+            <lightning-record-edit-form record-id={recordId} object-api-name="Contact" onsuccess={hendleSuccess}>
+                <lightning-messages></lightning-messages>
+                <lightning-input-field field-name="FirstName"></lightning-input-field>
+                <lightning-input-field field-name="LastName"></lightning-input-field>
+                <lightning-button type='submit' label="Save"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+    
+</template>

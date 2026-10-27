@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title ='Choose color' icon-name="standard:choice">
+        <div class ='slds-m-around_medium'>
+            <lightning-combobox
+              name="colors"
+              label="colors"
+              value={selectedcolors}
+              placeholder ='Select colors'
+              options={colors}
+              onchange={handleColorChange}
+            
+            multiple></lightning-combobox>
+            <lightning-button label="Click" onclick ={handleClick}></lightning-button>
+        </div>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title ='Account Streaming' icon-name ='standard:account'>
+        <div class = 'slds-m-aroung_medium'>
+        <template for:each={accountList} for:item='account'>
+            <li key ={account.accId}>{account.accName}-{account.recPath}</li>
+        </template>
+        </div>
+    </lightning-card>
+    
+</template>

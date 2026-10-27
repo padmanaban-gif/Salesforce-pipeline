@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title ='OrderDetails' icon-name="standard:account">
+        <div class ='slds-paround_medium'>
+        <lightning-input type="date" value ={startDate} label ='Enter start date' onchnage ={changeStartDate}>
+
+        </lightning-input>
+        <lightning-input type="date" value ={endDate} label ='Enter end date' onchnage ={changeEndDate}>
+            
+        </lightning-input>
+        <lightning-button label="Get New Cases" variant="brand" onclick ={handleOrders}></lightning-button>
+        <template if:true={orders}>
+            <template for:each={orders} for:item="order">
+                <p key ={order.Id}>{order.CaseNumber}-{order.CreatedDate}-{order.Priority}</p>
+            </template>
+        </template>
+        </div>
+        
+    </lightning-card>
+    
+</template>

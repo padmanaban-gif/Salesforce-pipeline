@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title = 'Employee Name'></lightning-card>
+    
+   <lightning-input type="checkbox" label="Show Employee" onchange = {showEmployeee}></lightning-input>
+   <template if:true = {showEmployee}>
+      <div>Name = Jaya prakash</div>
+      <div>Branch = Chennai</div>
+   </template>
+   <template if:false = {showEmployee}>
+    <div>Please click on the check box to see the Employee details</div>
+   </template>
+   <!-- Iterating list using for each and iterator-->
+   <template for:each ={frndsList} for:item ="frnds">
+    <p key ={frnds}>{frnds}</p>
+   </template>
+   <template iterator:it={areaList}>
+    
+       <p key ={it.value}>{it.value}</p>
+   </template>
+</template>

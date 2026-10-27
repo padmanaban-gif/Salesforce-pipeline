@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title ='Related Contacts' icon-name='custom:custom14'>
+        <!-- <template if:true ={records.data} >
+        <lightning-formatted-text value ={name} class ='slda-text-heading_large'>
+
+        </lightning-formatted-text></template>
+     -->
+    <ul class = 'slds-m-around_medium'>
+        <template for:each ={contacts.data} for:item ='contact'>
+            <li key ={contact.Id}>
+                {contact.FirstName}-{contact.LastName}
+            </li>
+        </template>
+    </ul>
+
+    </lightning-card>
+
+</template>

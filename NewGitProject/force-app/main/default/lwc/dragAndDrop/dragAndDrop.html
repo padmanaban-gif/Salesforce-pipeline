@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title ='Available items'>
+        <template for:each={availableItems} for:item="item">
+            <div key = {item.Id} class ='item' draggable="true" ondragstart={handleDragStart} data-id ={item.id}>
+                {item.name}
+            </div>
+        </template>
+    
+        <h2>dragged items</h2>
+        <div class ='drop zone' ondragover={allowDrop} ondrop ={hadleDrop}></div>
+        <template for:each ={selectedItems} for:item ='item'>
+            <div key ={item.id} class="item">{item.name}</div>
+        </template>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title ="Different peoples" class = 'stylingg'>
+        <div class ='slds-m-align-absolute_center'>
+            <template for:each={ContactList} for:item="Contact" for:index ='index'>
+                  <div key ={Contact.Id} class ='styling'>
+                     Name= {Contact.Name} ; Age = {Contact.age} ; Work = {Contact.Bank} 
+                     <p if:true ={Contact.City}>
+                        Address = {Contact.City}
+                     </p><p if:false= {Contact.City}>
+                        Address = No address found
+                     </p>
+                     <!--<p if:true={data.data}>
+                        {data.data}</p>
+                        <p if:false={data.error}>
+                            {data.error}
+                        </p>-->
+                        <p>{message}</p>
+                        <div if:true ={error}>
+                            <span style ='color:red'>{error}</span>
+                        </div>
+                  </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
